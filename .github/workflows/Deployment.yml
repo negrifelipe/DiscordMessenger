@@ -18,7 +18,7 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build DiscordMessenger.csproj --configuration Release --no-restore
+      run: dotnet build DiscordMessenger/DiscordMessenger.csproj --configuration Release --no-restore
     - name: Push to NuGet
       run: dotnet nuget push /home/runner/work/DiscordMessenger/DiscordMessenger/bin/Release/DiscordMessenger.${{ github.event.inputs.version }}.nupkg
              --api-key ${{ secrets.NUGET_DEPLOY_KEY }}
