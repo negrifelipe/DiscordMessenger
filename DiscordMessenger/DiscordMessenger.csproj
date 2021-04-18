@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>DiscordMessenger</Title>
+    <Authors>Feli</Authors>
+    <PackageProjectUrl>https://github.com/01-Feli/DiscordMessenger</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/01-Feli/DiscordMessenger</RepositoryUrl>
+    <PackageTags>Discord</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>
