@@ -17,12 +17,6 @@ jobs:
         fetch-depth: 0
     - name: Install dependencies
       run: dotnet restore
-    - name: Update version
-      run: "sed -i \"s#<Version>0.0.0</Version>#<Version>${{ github.event.inputs.version }}</Version>#\" DiscordMessenger.csproj"  
-    - name: Update package version
-      run: "sed -i \"s#<PackageVersion>0.0.0</PackageVersion>#<PackageVersion>${{ github.event.inputs.version }}</PackageVersion>#\" DiscordMessenger.csproj"  
-    - name: Update informational version
-      run: "sed -i \"s#<InformationalVersion>0.0.0</InformationalVersion>#<InformationalVersion>${{ github.event.inputs.version }}</InformationalVersion>#\" DiscordMessenger.csproj"              
     - name: Build
       run: dotnet build DiscordMessenger.csproj --configuration Release --no-restore
     - name: Push to NuGet
