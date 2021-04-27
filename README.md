@@ -1,4 +1,6 @@
 # DiscordMessenger
+![Discord](https://img.shields.io/discord/742861338233274418?label=Discord&logo=Discord) ![NugetDownloads](https://img.shields.io/nuget/dt/DiscordMessenger?label=Nuget%20Downloads)
+
 A library for sending discord webhooks in .NET
 
 You can add the library to the project using the nuget package.
