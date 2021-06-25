@@ -8,13 +8,9 @@
 	<Description>A library for sending discord webhooks in .NET</Description>
 	<PackageReleaseNotes>Make webhooks serializable</PackageReleaseNotes>
 	<PackageTags>Discord Webhooks</PackageTags>
-    <PackageProjectUrl>https://github.com/01-Feli/DiscordMessenger</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/01-Feli/DiscordMessenger</RepositoryUrl>
-<<<<<<< HEAD
+        <PackageProjectUrl>https://github.com/01-Feli/DiscordMessenger</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/01-Feli/DiscordMessenger</RepositoryUrl>
 	<Version>2.0.1</Version>
-=======
-	<Version>2.0.0</Version>
->>>>>>> 364d33e555295cb00b8b6ce377681aef32081012
     <PackageTags>Discord</PackageTags>
   </PropertyGroup>
 
