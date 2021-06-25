@@ -1,11 +1,16 @@
-﻿namespace DiscordMessenger
+﻿using Newtonsoft.Json;
+
+namespace DiscordMessenger
 {
     public class Field
     {
-        public string name { get; set; }
-        
-        public string value { get; set; }
+        [JsonProperty("name")]
+        public string Key { get; set; }
 
-        public bool inline { get; set; }
+        [JsonProperty("value")]
+        public string Value { get; set; }
+
+        [JsonProperty("inline")]
+        public bool Inline { get; set; }
     }
 }

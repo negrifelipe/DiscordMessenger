@@ -8,14 +8,52 @@ namespace DiscordMessenger
 {
     public class DiscordMessage
     {
-        public string username { get; set; }
+        [JsonProperty("username")]
+        public string Username { get; set; }
 
-        public string avatar_url { get; set; }
-        
-        public string content { get; set; }
+        [JsonProperty("avatar_url")]
+        public string AvatarUrl { get; set; }
 
-        public List<Embed> embeds { get; set; }
-        
+        [JsonProperty("content")]
+        public string Content { get; set; }
+
+        [JsonProperty("tts")]
+        public bool TTS { get; set; }
+
+        [JsonProperty("embeds")]
+        public List<Embed> Embeds { get; set; } = new List<Embed>();
+
+        public DiscordMessage SetUsername(string username)
+        {
+            Username = username;
+            return this;
+        }
+
+        public DiscordMessage SetAvatar(string avatar)
+        {
+            AvatarUrl = avatar;
+            return this;
+        }
+
+        public DiscordMessage SetContent(string content)
+        {
+            Content = content;
+            return this;
+        }
+
+        public DiscordMessage SetTTS(bool tts)
+        {
+            TTS = tts;
+            return this;
+        }
+
+        public Embed AddEmbed()
+        {
+            var embed = new Embed(this);
+            Embeds.Add(embed);
+            return embed;
+        }
+
         public void SendMessage(string url)
         {
             var webClient = new WebClient();

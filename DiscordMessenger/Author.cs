@@ -1,11 +1,19 @@
-﻿namespace DiscordMessenger
+﻿using Newtonsoft.Json;
+
+namespace DiscordMessenger
 {
     public class Author
     {
-        public string name { get; set; }
-        
-        public string url { get; set; }
-        
-        public string icon_url { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
+
+        [JsonProperty("url")]
+        public string Url { get; set; }
+
+        [JsonProperty("icon_url")]
+        public string Icon { get; set; }
+
+        [JsonProperty("proxy_icon_url")]
+        public string ProxyIcon { get; set; }
     }
 }
