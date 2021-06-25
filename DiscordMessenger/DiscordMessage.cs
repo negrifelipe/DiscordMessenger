@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 
 namespace DiscordMessenger
 {
+    [Serializable]
     public class DiscordMessage
     {
         [JsonProperty("username")]

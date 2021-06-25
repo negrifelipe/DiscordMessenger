@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace DiscordMessenger
 {
+    [Serializable]
     public class Embed
     {
         [JsonProperty("title")]

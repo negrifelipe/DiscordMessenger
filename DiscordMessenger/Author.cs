@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace DiscordMessenger
 {
+    [Serializable]
     public class Author
     {
         [JsonProperty("name")]
