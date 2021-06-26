@@ -46,6 +46,10 @@ namespace DiscordMessenger
         [JsonIgnore]
         private DiscordMessage MessageInstance { get; set; }
 
+        public Embed()
+        {
+
+        }
         public Embed(DiscordMessage messageInstance)
         {
             MessageInstance = messageInstance;

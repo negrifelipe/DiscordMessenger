@@ -23,6 +23,18 @@ namespace SampleUsage
                     .SetFooter("Test Footer", "https://i.imgur.com/xNGfbn3.png")
                 .Build()
                 .SendMessage("URL Here");
+
+            var message = new DiscordMessage
+            {
+                Content = "Test content",
+                Embeds = new List<Embed>()
+                {
+                    new Embed
+                    {
+                        Description = "Test"
+                    }
+                }
+            };
         }
     }
 }

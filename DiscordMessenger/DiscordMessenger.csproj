@@ -6,11 +6,11 @@
     <Title>DiscordMessenger</Title>
     <Authors>Feli</Authors>
 	<Description>A library for sending discord webhooks in .NET</Description>
-	<PackageReleaseNotes>Make webhooks serializable</PackageReleaseNotes>
+	<PackageReleaseNotes>Make webhooks without using methods</PackageReleaseNotes>
 	<PackageTags>Discord Webhooks</PackageTags>
-        <PackageProjectUrl>https://github.com/01-Feli/DiscordMessenger</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/01-Feli/DiscordMessenger</RepositoryUrl>
-	<Version>2.0.1</Version>
+    <PackageProjectUrl>https://github.com/01-Feli/DiscordMessenger</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/01-Feli/DiscordMessenger</RepositoryUrl>
+	<Version>2.0.2</Version>
     <PackageTags>Discord</PackageTags>
   </PropertyGroup>
 
